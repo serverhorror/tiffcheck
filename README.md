@@ -16,6 +16,18 @@ go build ./cmd/tiffcheck
 
 Binary name: `tiffcheck` (`tiffcheck.exe` on Windows).
 
+### Release
+
+```powershell
+git tag "0.0.$(Get-Date -Format 'yyyyMMddTHHmmssffff')"
+git push --tags
+```
+
+```shell
+git tag "0.0.$(date -u +'%Y%m%dT%H%M%S%4N')"
+git push --tags
+```
+
 ## Usage
 
 ```bash
